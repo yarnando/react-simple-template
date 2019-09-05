@@ -45,15 +45,15 @@
     margin-right: 10px;
 }
 /* transitions */
-.slideFade-on{
+.slideFadeModal-on{
     transition: opacity 0.5s;   
     transition: all 0.7s; 
-    transform: translateY(5px);  
+    transform: translateY(0px);  
     opacity: 1;       
 }
-.slideFade-off{
+.slideFadeModal-off{
     transition: opacity 0.5s;   
     transition: all 0.7s;  
-    transform: translateY(-5px);     
+    transform: translateY(-40px);     
     opacity: 0;          
 } 

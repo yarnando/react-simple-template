@@ -9,19 +9,19 @@ export default class Header extends Component {
     }
 
     componentDidMount() {
-        window.innerWidth >= 555 ? this.setState({ statusClasses: '' }) : this.setState({ statusClasses: 'slideFade-off' })
+        window.innerWidth >= 555 ? this.setState({ statusClasses: '' }) : this.setState({ statusClasses: 'slideFadeHeader-off' })
         window.addEventListener('resize', () => {
             if(window.innerWidth >= 555) {
                 this.setState({ statusClasses: '' })
             } else {
-                this.setState({ statusClasses: 'slideFade-off' })
+                this.setState({ statusClasses: 'slideFadeHeader-off' })
             }
         });        
     }    
 
     transitionClass() {
         this.setState({ active: !this.state.active })
-        this.state.active ? this.setState({ statusClasses: 'slideFade-on' }) : this.setState({ statusClasses: 'slideFade-off' })
+        this.state.active ? this.setState({ statusClasses: 'slideFadeHeader-on' }) : this.setState({ statusClasses: 'slideFadeHeader-off' })
     }    
 
     render() {

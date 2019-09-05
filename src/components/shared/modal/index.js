@@ -4,7 +4,7 @@ import "./styles.css";
 export default class Modal extends Component {
 
     state = {
-        statusClasses: "slideFade-on",
+        statusClasses: "slideFadeModal-on",
         showingContainer: false,
         modalShowing: false,
         modalType: {}
@@ -49,13 +49,11 @@ export default class Modal extends Component {
     }
 
     render() {
-        return (
-            <div>
-                {this.props.showing && (
+        return this.props.showing && (
                     <div className="modalContainer">
                         <div
                             className={`msgBox ${
-                                this.state.modalShowing ? "slideFade-on" : "slideFade-off"
+                                this.state.modalShowing ? "slideFadeModal-on" : "slideFadeModal-off"
                                 }`}
                         >
                             <div className={`${this.state.modalType.type}MsgText`}>
@@ -65,8 +63,6 @@ export default class Modal extends Component {
                             <button onClick={() => this.hideModal()}> Close</button>
                         </div>
                     </div>
-                )}
-            </div>
-        );
+                )
     }
 }
