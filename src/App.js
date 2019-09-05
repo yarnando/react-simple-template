@@ -153,10 +153,14 @@ class App extends Component {
                                     </div>
                                 }
                             >
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Dolores distinctio ab quaerat dolor, delectus doloribus
-                                architecto facilis, quisquam non suscipit pariatur fuga
-                                repellendus eveniet quasi harum error adipisci, hic placeat.
+                                <div className="row">
+                                    <div className="grid-item-6">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Dolores distinctio ab quaerat dolor, delectus doloribus
+                                    architecto facilis, quisquam non suscipit pariatur fuga
+                                    repellendus eveniet quasi harum error adipisci, hic placeat.                                        
+                                    </div>
+                                </div>
                             </Card>
                         </div>
                     </div>

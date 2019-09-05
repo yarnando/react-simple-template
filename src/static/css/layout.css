@@ -1,6 +1,6 @@
 .container {
   width: 90vw;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 0 15px;
   -webkit-box-shadow: 1px 1px 6px 0px rgba(204, 204, 204, 1);
   -moz-box-shadow: 1px 1px 6px 0px rgba(204, 204, 204, 1);
